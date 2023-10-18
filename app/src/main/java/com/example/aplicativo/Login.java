@@ -19,6 +19,7 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         Button meuBotao = findViewById(R.id.button);
+        Button souCliente = findViewById(R.id.cliente);
         TextView cad =  findViewById(R.id.cadastro);
         TextView rec =  findViewById(R.id.esqueciSenha);
 
@@ -43,6 +44,14 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Login.this, Recuperacao.class);
+                startActivity(intent);
+            }
+        });
+
+        souCliente.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Login.this, Rastreio.class);
                 startActivity(intent);
             }
         });

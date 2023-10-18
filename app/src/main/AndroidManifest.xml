@@ -13,6 +13,12 @@
         android:theme="@style/Theme.Aplicativo"
         tools:targetApi="31">
         <activity
+            android:name=".rastreio.telaRastreio"
+            android:exported="false" />
+        <activity
+            android:name=".Rastreio"
+            android:exported="false" />
+        <activity
             android:name=".home.Mensagem"
             android:exported="false" />
         <activity
