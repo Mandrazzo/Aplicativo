@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Aplicativo</string>
+    <string name="title_activity_cod_rastreio">activity_cod_rastreio</string>
+    <string name="title_activity_codrastreio">activity_codrastreio</string>
 </resources>
