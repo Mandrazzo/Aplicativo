@@ -27,8 +27,8 @@
 
     <com.google.android.gms.maps.MapView
         android:id="@+id/mapView2"
-        android:layout_width="353dp"
-        android:layout_height="435dp" />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 
 </RelativeLayout>
