@@ -10,17 +10,8 @@
     android:background="@color/white"
     tools:context=".rastreio.telaRastreio">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="330dp"
-        android:layout_height="124dp"
-        android:text="Localizacao - MAIOR"
-        android:textAllCaps="true"
-        android:textSize="34sp" />
-
-    <TextView
-        android:id="@+id/textView2"
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="INFORMAÇoES MOTORISTA" />
+        android:layout_height="621dp" />
 </LinearLayout>

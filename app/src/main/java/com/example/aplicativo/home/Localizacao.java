@@ -4,12 +4,16 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.MapsInitializer;
 import com.example.aplicativo.R;
+import com.google.android.gms.maps.MapView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 
 public class Localizacao extends AppCompatActivity {
+    private MapView mapView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +22,7 @@ public class Localizacao extends AppCompatActivity {
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigation);
         bottomNavigationView.setSelectedItemId(R.id.bottom_localizacao);
+
 
         // Navegação entre o  Menu
         bottomNavigationView.setOnItemSelectedListener(item -> {
@@ -40,5 +45,7 @@ public class Localizacao extends AppCompatActivity {
 
         });
             // Fim
+
+
     }
 }

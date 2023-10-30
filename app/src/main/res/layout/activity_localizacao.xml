@@ -8,13 +8,6 @@
     android:background="@color/white"
     tools:context=".home.Localizacao">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Localização"
-        android:textColor="@color/lavender"
-        android:layout_centerInParent="true"
-        android:textSize="36sp" />
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigation"
         android:layout_width="match_parent"
@@ -31,6 +24,11 @@
         app:itemRippleColor="@android:color/transparent"
         app:labelVisibilityMode="unlabeled"
         app:menu="@menu/bottom_menu" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView2"
+        android:layout_width="353dp"
+        android:layout_height="435dp" />
 
 
 </RelativeLayout>
