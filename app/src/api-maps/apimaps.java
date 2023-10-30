@@ -12,7 +12,7 @@ public class GoogleMapsRealTime {
 
     public static void main(String[] args) {
         // Necessário entrar na Google Cloud Console e colocar uma chave de API(To sem cartão de crédito)
-        String apiKey = "SUA_CHAVE_DE_API";
+        String apiKey = "AIzaSyBqQRZmoMC3mL30IdbqHAknUxii6mv2mKA";
 
         GeoApiContext context = new GeoApiContext.Builder()
                 .apiKey(apiKey)
