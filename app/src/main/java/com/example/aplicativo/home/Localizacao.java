@@ -7,8 +7,6 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.MapsInitializer;
-import com.google.android.material.navigation.NavigationView;
 
 public class Localizacao extends AppCompatActivity {
     private MapView mapView;
@@ -18,10 +16,14 @@ public class Localizacao extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_localizacao);
 
+
+        //botão de navegação
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigation);
         bottomNavigationView.setSelectedItemId(R.id.bottom_localizacao);
+        //Google Maps
         mapView = findViewById(R.id.mapView2);
         mapView.onCreate(savedInstanceState);
+
 
 
         // Navegação entre o  Menu
@@ -45,12 +47,17 @@ public class Localizacao extends AppCompatActivity {
 
         });
             // Fim
+
+
+        //Configuração do Google Maps
         mapView.getMapAsync(new OnMapReadyCallback() {
             @Override
             public void onMapReady(GoogleMap googleMap) {
-                // Configure e utilize o objeto GoogleMap aqui.
             }
         });
+    } // fim do onCreate
+
+    private void fetchAndDisplayApiData() {
     }
 
     @Override
@@ -77,4 +84,6 @@ public class Localizacao extends AppCompatActivity {
         mapView.onDestroy();
 
     }
+
+
 }

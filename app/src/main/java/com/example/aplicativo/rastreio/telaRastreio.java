@@ -1,6 +1,8 @@
 package com.example.aplicativo.rastreio;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.TextView;
+
 import com.google.android.gms.maps.GoogleMap;
 import com.example.aplicativo.R;
 import com.google.android.gms.maps.MapView;
@@ -10,6 +12,9 @@ import com.google.android.gms.maps.MapsInitializer;
 
 public class telaRastreio extends AppCompatActivity {
     private MapView mapView;
+    private TextView latitudeClienteTextView, longitudeClienteTextView;
+    private TextView latitudeLojaTextView, longitudeLojaTextView;
+    private TextView latitudeMotoTextView, longitudeMotoTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -25,10 +25,62 @@
         app:labelVisibilityMode="unlabeled"
         app:menu="@menu/bottom_menu" />
 
-    <com.google.android.gms.maps.MapView
-        android:id="@+id/mapView2"
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        android:background="@drawable/custom_edittext">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/mapView2"
+                android:layout_width="296dp"
+                android:layout_height="412dp" />
+
+            <TextView
+                android:id="@+id/latitudeCliente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="AAAAAAAAAAAAAA"/>
+            <TextView
+                android:id="@+id/longitudeCliente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="AAAAAAAAAAAAAA"/>
+            <TextView
+                android:id="@+id/latitudeLoja"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="AAAAAAAAAAAAAA"/>
+            <TextView
+                android:id="@+id/longitudeLoja"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="AAAAAAAAAAAAAA"/>
+            <TextView
+                android:id="@+id/latitudeMoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="AAAAAAAAAAAAAA"/>
+            <TextView
+                android:id="@+id/longitudeMoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="AAAAAAAAAAAAAA"/>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
 
 </RelativeLayout>
