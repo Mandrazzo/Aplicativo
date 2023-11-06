@@ -7,8 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.aplicativo.home.MainActivity;
-
 public class Recuperacao extends AppCompatActivity {
 
     @Override
@@ -16,7 +14,7 @@ public class Recuperacao extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recuperacao);
 
-        Button voltar = findViewById(R.id.button);
+        Button voltar = findViewById(R.id.buttonLogin);
 
 
         // Click do botão para voltar para tela de login

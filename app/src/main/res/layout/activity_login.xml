@@ -45,7 +45,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:id="@+id/username"
+                android:id="@+id/email"
                 android:background="@drawable/custom_edittext"
                 android:drawableLeft="@drawable/icone_perfil"
                 android:drawablePadding="8dp"
@@ -72,7 +72,7 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:id="@+id/button"
+                android:id="@+id/buttonLogin"
                 android:text="Entrar"
                 android:textColor="@color/white"
                 android:textSize="18sp"

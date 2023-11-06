@@ -1,5 +1,6 @@
 package com.example.aplicativo;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -10,6 +11,11 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.aplicativo.home.MainActivity;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class Login extends AppCompatActivity {
 
@@ -18,10 +24,10 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        Button meuBotao = findViewById(R.id.button);
+        Button meuBotao = findViewById(R.id.buttonLogin);
         Button souCliente = findViewById(R.id.cliente);
-        TextView cad =  findViewById(R.id.cadastro);
-        TextView rec =  findViewById(R.id.esqueciSenha);
+        TextView cad = findViewById(R.id.cadastro);
+        TextView rec = findViewById(R.id.esqueciSenha);
 
         // Click do botão para Logar
         meuBotao.setOnClickListener(new View.OnClickListener() {
@@ -55,7 +61,6 @@ public class Login extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        //Fim
-
     }
 }
+
