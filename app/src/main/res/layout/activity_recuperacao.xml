@@ -37,7 +37,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:id="@+id/codRastreio"
+                android:id="@+id/edit_email"
                 android:background="@drawable/custom_edittext"
                 android:drawableLeft="@drawable/icone_email"
                 android:drawablePadding="8dp"
