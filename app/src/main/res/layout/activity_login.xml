@@ -45,7 +45,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:id="@+id/email"
+                android:id="@+id/emailedt"
                 android:background="@drawable/custom_edittext"
                 android:drawableLeft="@drawable/icone_perfil"
                 android:drawablePadding="8dp"
@@ -58,7 +58,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:id="@+id/password"
+                android:id="@+id/senhaedt"
                 android:background="@drawable/custom_edittext"
                 android:drawableLeft="@drawable/icone_cadeado"
                 android:drawablePadding="8dp"
@@ -69,6 +69,15 @@
                 android:textColor="@color/black"
                 android:textColorHighlight="@color/cardview_dark_background"
                 android:layout_marginTop="20dp"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible"
+                tools:visibility="invisible" />
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
