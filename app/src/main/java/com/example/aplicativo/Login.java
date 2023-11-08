@@ -45,6 +45,7 @@ import com.google.firebase.auth.FirebaseUser;
                 public void onClick(View v) {
                     String email = emailedt.getText().toString();
                     String senha = senhaedt.getText().toString();
+
                     if (email.isEmpty() || senha.isEmpty()) {
                         Snackbar snackbar = Snackbar.make(v, mensagens[0], Snackbar.LENGTH_SHORT);
                         snackbar.setBackgroundTint(Color.BLACK);
@@ -53,10 +54,9 @@ import com.google.firebase.auth.FirebaseUser;
                     } else {
                         AutenticarUsuario(v);
                     }
-                    Intent intent = new Intent(Login.this, MainActivity.class);
-                    startActivity(intent);
                 }
             });
+
             // Click do botão para registro
             cad.setOnClickListener(new View.OnClickListener() {
                 @Override

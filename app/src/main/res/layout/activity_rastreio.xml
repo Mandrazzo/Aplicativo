@@ -36,7 +36,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/edit_email"
+                android:id="@+id/editTextEmail"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="20dp"
@@ -56,7 +56,7 @@
                 android:paddingTop="8dp">
 
                 <Button
-                    android:id="@+id/confirmaRastreio"
+                    android:id="@+id/recuperarSenha"
                     android:layout_width="133dp"
                     android:layout_height="58dp"
                     android:layout_marginTop="5dp"

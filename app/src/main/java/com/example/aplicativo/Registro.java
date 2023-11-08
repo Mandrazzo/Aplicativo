@@ -2,10 +2,8 @@ package com.example.aplicativo;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -107,7 +105,7 @@ public class Registro extends AppCompatActivity {
     }
     private void IniciarComponentes() {
         edit_nome = findViewById(R.id.edit_nome);
-        edit_email = findViewById(R.id.edit_email);
+        edit_email = findViewById(R.id.editTextEmail);
         edit_senha = findViewById(R.id.edit_senha);
         edit_cpf = findViewById(R.id.edit_cpf);
         edit_placa = findViewById(R.id.edit_placa);

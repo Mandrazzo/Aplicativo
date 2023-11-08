@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.aplicativo.home.MainActivity;
 import com.example.aplicativo.rastreio.telaRastreio;
 
 public class Rastreio extends AppCompatActivity {
@@ -21,7 +20,7 @@ public class Rastreio extends AppCompatActivity {
         setContentView(R.layout.activity_rastreio);
 
         Button voltar = findViewById(R.id.voltar);
-        Button rastreio = findViewById(R.id.confirmaRastreio);
+        Button rastreio = findViewById(R.id.recuperarSenha);
 
         voltar.setOnClickListener(new View.OnClickListener() {
             @Override
