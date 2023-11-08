@@ -73,11 +73,21 @@ public class Registro extends AppCompatActivity {
     private void SalvarDadosUsuario(){
         String nome = edit_nome.getText().toString();
         String telefone = edit_telefone.getText().toString();
+        String data = edit_data.getText().toString();
+        String cpf = edit_cpf.getText().toString();
+        String renavam = edit_renavam.getText().toString();
+        String email = edit_email.getText().toString();
+        String senha = edit_senha.getText().toString();
 
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         Map<String,Object> usuarios = new HashMap<>();
         usuarios.put("nome",nome);
         usuarios.put("telefone",telefone);
+        usuarios.put("data",data);
+        usuarios.put("cpf",cpf);
+        usuarios.put("renavam",renavam);
+        usuarios.put("email",email);
+        usuarios.put("senha",senha);
 
         usuarioID = FirebaseAuth.getInstance().getCurrentUser().getUid();
 
