@@ -6,11 +6,7 @@
         android:id="@+id/bottom_home"
         android:icon="@drawable/icone_home"
         android:title="Home" />
-        
-    <item
-        android:id="@+id/bottom_mensagem"
-        android:icon="@drawable/icone_mensagem"
-        android:title="Mensagem" />
+
     <item
         android:id="@+id/bottom_localizacao"
         android:icon="@drawable/icone_localizacao"

@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@color/white"
+    android:background="@drawable/fundoapp"
     tools:context=".Login">
 
 
@@ -82,12 +82,22 @@
                 android:id="@+id/buttonLogin"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginTop="30dp"
                 android:backgroundTint="@color/black"
                 android:text="Entrar"
                 android:textColor="@color/white"
                 android:textSize="18sp"
                 app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/cliente"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/black"
+                android:text="Sou Cliente"
+                app:cornerRadius = "20dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -121,17 +131,5 @@
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
-
-    <Button
-        android:id="@+id/cliente"
-        android:layout_width="145dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:backgroundTint="@color/cinza_fosco"
-        android:padding="8dp"
-        android:text="Sou Cliente"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="14sp" />
 
 </LinearLayout>

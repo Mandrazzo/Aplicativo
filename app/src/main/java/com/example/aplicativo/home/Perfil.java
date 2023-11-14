@@ -40,10 +40,6 @@ public class Perfil extends AppCompatActivity {
         bottomNavigationView.setOnItemSelectedListener(item -> {
             int itemId = item.getItemId();
             if (itemId == R.id.bottom_perfil) {
-            } else if (itemId == R.id.bottom_mensagem) {
-                startActivity(new Intent(getApplicationContext(), Mensagem.class));
-                overridePendingTransition(R.anim.deslizar_direita, R.anim.deslizar_esquerda);
-                finish();
             } else if (itemId == R.id.bottom_localizacao) {
                 startActivity(new Intent(getApplicationContext(), Localizacao.class));
                 overridePendingTransition(R.anim.deslizar_direita, R.anim.deslizar_esquerda);

@@ -30,10 +30,6 @@ public class Localizacao extends AppCompatActivity {
         bottomNavigationView.setOnItemSelectedListener(item -> {
             int itemId = item.getItemId();
             if (itemId == R.id.bottom_localizacao) {
-            } else if (itemId == R.id.bottom_mensagem) {
-                startActivity(new Intent(getApplicationContext(), Mensagem.class));
-                overridePendingTransition(R.anim.deslizar_direita, R.anim.deslizar_esquerda);
-                finish();
             } else if (itemId == R.id.bottom_home) {
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
                 overridePendingTransition(R.anim.deslizar_direita, R.anim.deslizar_esquerda);
