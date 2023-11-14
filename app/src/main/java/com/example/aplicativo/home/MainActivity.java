@@ -2,16 +2,25 @@ package com.example.aplicativo.home;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.content.Intent;
 import android.Manifest;
 import com.example.aplicativo.R;
+import com.example.aplicativo.recyclerView.Adapter;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
 
+    RecyclerView recyclerView;
+    Adapter adapter;
+    ArrayList<String> items;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,14 +31,39 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigationView.setSelectedItemId(R.id.bottom_home);
 
 
+
+        items = new ArrayList<>();
+        items.add("AAAAAAAAAA");
+        items.add("AAAAAAAAAA");
+        items.add("AAAAAAAAAA");
+        items.add("AAAAAAAAAA");
+        items.add("AAAAAAAAAA");
+        items.add("AAAAAAAAAA");
+        items.add("AAAAAAAAAA");
+        items.add("AAAAAAAAAA");
+        items.add("AAAAAAAAAA");
+        items.add("AAAAAAAAAA");
+        items.add("AAAAAAAAAA");
+        items.add("AAAAAAAAAA");
+        items.add("AAAAAAAAAA");
+        items.add("AAAAAAAAAA");
+        items.add("AAAAAAAAAA");
+        items.add("AAAAAAAAAA");
+        items.add("AAAAAAAAAA");
+        items.add("AAAAAAAAAA");
+
+
+
+        recyclerView = findViewById(R.id.recyclerView);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        adapter = new Adapter(this,items);
+        recyclerView.setAdapter(adapter);
+
+
         // Navegação entre o  Menu
         bottomNavigationView.setOnItemSelectedListener(item -> {
             int itemId = item.getItemId();
             if (itemId == R.id.bottom_home) {
-            } else if (itemId == R.id.bottom_mensagem) {
-                startActivity(new Intent(getApplicationContext(), Mensagem.class));
-                overridePendingTransition(R.anim.deslizar_direita, R.anim.deslizar_esquerda);
-                finish();
             } else if (itemId == R.id.bottom_localizacao) {
                 startActivity(new Intent(getApplicationContext(), Localizacao.class));
                 overridePendingTransition(R.anim.deslizar_direita, R.anim.deslizar_esquerda);
@@ -43,9 +77,9 @@ public class MainActivity extends AppCompatActivity {
 
         }); // fim menu
 
-    }
+    } // FIM ONCREATE
 
-}
+ } // FIM PROGRAMA
 
 
 
