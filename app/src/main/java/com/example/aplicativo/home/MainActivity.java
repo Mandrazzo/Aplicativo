@@ -33,24 +33,45 @@ public class MainActivity extends AppCompatActivity {
 
 
         items = new ArrayList<>();
-        items.add("AAAAAAAAAA");
-        items.add("AAAAAAAAAA");
-        items.add("AAAAAAAAAA");
-        items.add("AAAAAAAAAA");
-        items.add("AAAAAAAAAA");
-        items.add("AAAAAAAAAA");
-        items.add("AAAAAAAAAA");
-        items.add("AAAAAAAAAA");
-        items.add("AAAAAAAAAA");
-        items.add("AAAAAAAAAA");
-        items.add("AAAAAAAAAA");
-        items.add("AAAAAAAAAA");
-        items.add("AAAAAAAAAA");
-        items.add("AAAAAAAAAA");
-        items.add("AAAAAAAAAA");
-        items.add("AAAAAAAAAA");
-        items.add("AAAAAAAAAA");
-        items.add("AAAAAAAAAA");
+        items.add("PEDIDO");
+        items.add("PEDIDO");
+        items.add("PEDIDO");
+        items.add("PEDIDO");
+        items.add("PEDIDO");
+        items.add("PEDIDO");
+        items.add("PEDIDO");
+        items.add("PEDIDO");
+        items.add("PEDIDO");
+        items.add("PEDIDO");
+        items.add("PEDIDO");
+        items.add("PEDIDO");
+        items.add("PEDIDO");
+        items.add("PEDIDO");
+        items.add("PEDIDO");
+        items.add("PEDIDO");
+        items.add("PEDIDO");
+        items.add("PEDIDO");
+        items.add("PEDIDO");
+        items.add("PEDIDO");
+        items.add("PEDIDO");
+        items.add("PEDIDO");
+        items.add("PEDIDO");
+        items.add("PEDIDO");
+        items.add("PEDIDO");
+        items.add("PEDIDO");
+        items.add("PEDIDO");
+        items.add("PEDIDO");
+        items.add("PEDIDO");
+        items.add("PEDIDO");
+        items.add("PEDIDO");
+        items.add("PEDIDO");
+        items.add("PEDIDO");
+        items.add("PEDIDO");
+        items.add("PEDIDO");
+        items.add("PEDIDO");
+        items.add("PEDIDO");
+        items.add("PEDIDO");
+
 
 
 
