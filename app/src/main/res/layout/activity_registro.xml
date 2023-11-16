@@ -81,7 +81,7 @@
                 android:layout_height="50dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/custom_edittext"
-                android:drawableLeft="@drawable/icone_data"
+                android:drawableLeft="@drawable/icone_telefone"
                 android:drawablePadding="8dp"
                 android:hint="Telefone"
                 android:inputType="number"
