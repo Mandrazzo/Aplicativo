@@ -72,7 +72,9 @@ public class MainActivity extends AppCompatActivity {
         items.add("PEDIDO");
         items.add("PEDIDO");
 
-        
+
+
+
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         adapter = new Adapter(this,items);
