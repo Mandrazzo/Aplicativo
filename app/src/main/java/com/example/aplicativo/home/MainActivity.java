@@ -17,7 +17,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-
+//AAAA
     RecyclerView recyclerView;
     Adapter adapter;
     ArrayList<String> items;
