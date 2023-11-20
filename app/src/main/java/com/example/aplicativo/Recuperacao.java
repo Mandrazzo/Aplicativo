@@ -15,6 +15,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class Recuperacao extends AppCompatActivity {
 
     private FirebaseAuth firebaseAuth;
+    private Button btnVoltar;
     private EditText emailEditText;
 
     @Override
@@ -26,6 +27,15 @@ public class Recuperacao extends AppCompatActivity {
         emailEditText = findViewById(R.id.editTextEmail); // Substitua pelo ID do seu campo de e-mail
 
         Button recuperarSenhaButton = findViewById(R.id.recuperarSenha); // Substitua pelo ID do seu botão
+        btnVoltar = findViewById(R.id.btnVoltar);
+
+        btnVoltar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Recuperacao.this, Login.class);
+                startActivity(intent);
+            }
+        });
 
         recuperarSenhaButton.setOnClickListener(new View.OnClickListener() {
             @Override

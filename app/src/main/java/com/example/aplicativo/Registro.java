@@ -2,6 +2,7 @@ package com.example.aplicativo;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -41,16 +42,16 @@ public class Registro extends AppCompatActivity {
         voltar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               // Intent intent = new Intent(Registro.this, Login.class);
-                //startActivity(intent);
+               Intent intent = new Intent(Registro.this, Login.class);
+                startActivity(intent);
             }
         });
         btnCadastrar.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                //Intent intent = new Intent(Registro.this, Login.class);
-               // startActivity(intent);
+                Intent intent = new Intent(Registro.this, Login.class);
+               startActivity(intent);
 
                 String nome = edit_nome.getText().toString();
                 String email = edit_email.getText().toString();
