@@ -35,45 +35,6 @@ public class MainActivity extends AppCompatActivity {
         items = new ArrayList<>();
         items.add("PEDIDO");
         items.add("PEDIDO");
-        items.add("PEDIDO");
-        items.add("PEDIDO");
-        items.add("PEDIDO");
-        items.add("PEDIDO");
-        items.add("PEDIDO");
-        items.add("PEDIDO");
-        items.add("PEDIDO");
-        items.add("PEDIDO");
-        items.add("PEDIDO");
-        items.add("PEDIDO");
-        items.add("PEDIDO");
-        items.add("PEDIDO");
-        items.add("PEDIDO");
-        items.add("PEDIDO");
-        items.add("PEDIDO");
-        items.add("PEDIDO");
-        items.add("PEDIDO");
-        items.add("PEDIDO");
-        items.add("PEDIDO");
-        items.add("PEDIDO");
-        items.add("PEDIDO");
-        items.add("PEDIDO");
-        items.add("PEDIDO");
-        items.add("PEDIDO");
-        items.add("PEDIDO");
-        items.add("PEDIDO");
-        items.add("PEDIDO");
-        items.add("PEDIDO");
-        items.add("PEDIDO");
-        items.add("PEDIDO");
-        items.add("PEDIDO");
-        items.add("PEDIDO");
-        items.add("PEDIDO");
-        items.add("PEDIDO");
-        items.add("PEDIDO");
-        items.add("PEDIDO");
-
-
-
 
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
