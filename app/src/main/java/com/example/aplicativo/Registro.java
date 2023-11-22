@@ -1,6 +1,4 @@
 package com.example.aplicativo;
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -8,6 +6,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -77,6 +79,7 @@ public class Registro extends AppCompatActivity {
         String renavam = edit_renavam.getText().toString();
         String email = edit_email.getText().toString();
         String senha = edit_senha.getText().toString();
+        String placa = edit_placa.getText().toString();
 
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         Map<String,Object> usuarios = new HashMap<>();
@@ -87,6 +90,7 @@ public class Registro extends AppCompatActivity {
         usuarios.put("renavam",renavam);
         usuarios.put("email",email);
         usuarios.put("senha",senha);
+        usuarios.put("placa",placa);
 
         usuarioID = FirebaseAuth.getInstance().getCurrentUser().getUid();
 
