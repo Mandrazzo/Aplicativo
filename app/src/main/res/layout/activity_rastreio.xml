@@ -29,14 +29,19 @@
                 android:id="@+id/loginText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Insira seu Codigo de Rastreio"
+                android:text="Insira seu código de rastreio"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="36sp"
+                android:textSize="30sp"
                 android:textStyle="bold" />
 
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/mapView"
+                android:layout_width="match_parent"
+                android:layout_height="350dp" />
+
             <EditText
-                android:id="@+id/editTextEmail"
+                android:id="@+id/codRastreio"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="20dp"
@@ -44,6 +49,7 @@
                 android:drawableLeft="@drawable/icone_mensagem"
                 android:drawablePadding="8dp"
                 android:hint="Cod. Rastreio"
+                android:textColorHint="@color/cinza_fosco"
                 android:maxLength="30"
                 android:padding="8dp"
                 android:textColor="@color/black"
