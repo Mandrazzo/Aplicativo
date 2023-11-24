@@ -37,68 +37,51 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:text="PEDIDO "
+                android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="40sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/imageView"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.07999998" />
+                app:layout_constraintVertical_bias="0.248" />
 
-            <TextView
-                android:id="@+id/textDesc"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:text="Descrição dos Pedidos"
-                android:textSize="20sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
+            <LinearLayout
+                android:id="@+id/layoutComp"
+                android:layout_width="72dp"
+                android:layout_height="34dp"
+                android:orientation="vertical"
                 app:layout_constraintStart_toEndOf="@+id/imageView"
-                app:layout_constraintTop_toBottomOf="@+id/textTitle"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_constraintTop_toBottomOf="@+id/textTitle">
 
-            <TextView
-                android:id="@+id/textTeste"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:text="Descrição dos Pedidos"
-                android:textSize="20sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/imageView"
-                app:layout_constraintTop_toBottomOf="@+id/textDesc"
-                app:layout_constraintVertical_bias="0.0" />
+                <TextView
+                    android:id="@+id/latitude"
+                    android:layout_width="71dp"
+                    android:layout_height="wrap_content"
+                    android:hint="TESTE"
+                    android:textColor="@color/white" />
 
-            <TextView
-                android:id="@+id/textTeste2"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:text="Descrição dos Pedidos"
-                android:textSize="20sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/imageView"
-                app:layout_constraintTop_toBottomOf="@+id/textTeste"
-                app:layout_constraintVertical_bias="0.0" />
+                <TextView
+                    android:id="@+id/longitude"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="TESTE"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/button"
-                android:layout_width="63dp"
-                android:layout_height="44dp"
+                android:layout_width="87dp"
+                android:layout_height="58dp"
                 android:background="@drawable/baseline_local_shipping_24"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.917"
-                app:layout_constraintStart_toEndOf="@+id/imageView"
-                app:layout_constraintTop_toBottomOf="@+id/textTeste2"
-                app:layout_constraintVertical_bias="1.0" />
+                app:layout_constraintHorizontal_bias="0.899"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layoutComp"
+                app:layout_constraintVertical_bias="0.0" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

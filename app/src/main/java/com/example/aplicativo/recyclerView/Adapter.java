@@ -1,29 +1,26 @@
 package com.example.aplicativo.recyclerView;
-
-import android.app.ActivityManager;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.example.aplicativo.R;
+import com.example.aplicativo.home.MainActivity;
+import com.example.aplicativo.localização.Loc;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
     private LayoutInflater layoutInflater;
-    private List<String> data;
+    private ArrayList<Loc> data;
 
-
-    public Adapter(Context context, List<String> data){
+    public Adapter(MainActivity context, ArrayList<Loc> data) {
         this.layoutInflater = LayoutInflater.from(context);
         this.data = data;
-
     }
 
     @NonNull
@@ -36,8 +33,9 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
-        String title = data.get(position);
-        holder.textTitle.setText(title);
+       Loc loc = data.get(position);
+        holder.teste1.setText("Latitude " + loc.getLatitude());
+        holder.teste2.setText("Longitude " + loc.getLongitude());
     }
 
     @Override
@@ -47,12 +45,13 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
     public class ViewHolder extends RecyclerView.ViewHolder{
 
-        TextView textTitle, textDescricao;
+        TextView textTitle, teste1, teste2;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             textTitle = itemView.findViewById(R.id.textTitle);
-            textDescricao = itemView.findViewById(R.id.textDesc);
+            teste1 = itemView.findViewById(R.id.latitude);
+            teste2 = itemView.findViewById(R.id.longitude);
         }
     }
 
