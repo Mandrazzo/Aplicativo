@@ -1,13 +1,13 @@
 package com.example.aplicativo.home;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.aplicativo.Login;
 import com.example.aplicativo.R;
@@ -21,7 +21,7 @@ import com.google.firebase.firestore.FirebaseFirestoreException;
 
 public class Perfil extends AppCompatActivity {
 
-    private TextView emailUser, placaVeiculo, nomeUsuario;
+    private TextView emailUser, placaVeiculo, nomeUsuario ,dataNascimento , telefoneContato , renavamVeiculo, userCPF;
     private Button deslogar;
 
     FirebaseFirestore db = FirebaseFirestore.getInstance();
@@ -71,7 +71,6 @@ public class Perfil extends AppCompatActivity {
         super.onStart();
 
         String email = FirebaseAuth.getInstance().getCurrentUser().getEmail();
-
         usuarioID = FirebaseAuth.getInstance().getCurrentUser().getUid();
 
         DocumentReference documentReference = db.collection("Usuarios").document(usuarioID);
@@ -81,6 +80,11 @@ public class Perfil extends AppCompatActivity {
                 if(documentSnapshot != null){
                     nomeUsuario.setText(documentSnapshot.getString("nome"));
                     emailUser.setText(email);
+                    placaVeiculo.setText(documentSnapshot.getString("placa"));
+                    userCPF.setText(documentSnapshot.getString("cpf"));
+                    renavamVeiculo.setText(documentSnapshot.getString("renavam"));
+                    telefoneContato.setText(documentSnapshot.getString("telefone"));
+                    dataNascimento.setText(documentSnapshot.getString("data"));
                 }
             }
         });
@@ -90,7 +94,11 @@ public class Perfil extends AppCompatActivity {
         nomeUsuario = findViewById(R.id.nomeUsuario);
         emailUser = findViewById(R.id.emailUser);
         deslogar = findViewById(R.id.deslogar);
-
+        placaVeiculo = findViewById(R.id.placaVeiculo);
+        dataNascimento = findViewById(R.id.dataNascimento);
+        renavamVeiculo =  findViewById(R.id.renavamVeiculo);
+        userCPF = findViewById(R.id.userCPF);
+        telefoneContato = findViewById(R.id.telefoneContato);
     }
 }
 
