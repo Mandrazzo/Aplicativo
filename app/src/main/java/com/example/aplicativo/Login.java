@@ -35,7 +35,7 @@ import com.google.firebase.auth.FirebaseUser;
             IniciarComponentes();
 
             Button meuBotao = findViewById(R.id.buttonLogin);
-            Button souCliente = findViewById(R.id.cliente);
+          //  Button souCliente = findViewById(R.id.cliente);
             TextView cad = findViewById(R.id.cadastro);
             TextView rec = findViewById(R.id.esqueciSenha);
 
@@ -74,13 +74,13 @@ import com.google.firebase.auth.FirebaseUser;
                 }
             });
 
-            souCliente.setOnClickListener(new View.OnClickListener() {
+          /*  souCliente.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     Intent intent = new Intent(Login.this, Rastreio.class);
                     startActivity(intent);
                 }
-            });
+            });*/
         }
 
         private void AutenticarUsuario(View view) {

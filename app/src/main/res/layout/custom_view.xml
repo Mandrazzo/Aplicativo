@@ -45,20 +45,21 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/imageView"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.248" />
+                app:layout_constraintVertical_bias="0.136" />
 
             <LinearLayout
                 android:id="@+id/layoutComp"
-                android:layout_width="72dp"
-                android:layout_height="34dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
                 android:orientation="vertical"
                 app:layout_constraintStart_toEndOf="@+id/imageView"
                 app:layout_constraintTop_toBottomOf="@+id/textTitle">
 
                 <TextView
                     android:id="@+id/latitude"
-                    android:layout_width="71dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textAlignment="center"
                     android:hint="TESTE"
                     android:textColor="@color/white" />
 
@@ -66,6 +67,7 @@
                     android:id="@+id/longitude"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textAlignment="center"
                     android:hint="TESTE"
                     android:textColor="@color/white" />
 
@@ -73,12 +75,16 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/button"
-                android:layout_width="87dp"
-                android:layout_height="58dp"
-                android:background="@drawable/baseline_local_shipping_24"
+                android:layout_width="156dp"
+                android:layout_height="40dp"
+                android:background="@drawable/background_bottom"
+                android:drawableLeft="@drawable/icone_entrega"
+                android:paddingStart="2dp"
+                android:text="Iniciar Entrega"
+                android:textColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.899"
+                app:layout_constraintHorizontal_bias="0.978"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/layoutComp"
                 app:layout_constraintVertical_bias="0.0" />
